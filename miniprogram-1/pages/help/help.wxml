@@ -1,0 +1,36 @@
+<!--pages/help/help.wxml-->
+<view class="whole">
+  <text class="navigation">游客求救</text>
+  <image class="backpic" src="/images/rider.png"></image>
+</view>
+<view class="content">
+  <view class="frame">
+    <view class="every01">
+      <text class="label">定位</text>
+      <text class="inputmap" decode="true" bindinput="getLocations" >{{text}}</text> 
+      <image class="mapper" bindtap="getMap" data-index="0" src="/images/map.png"></image>
+    </view>
+    <view class="every02">
+      <text class="label">联系方式</text>
+      <input class="inputnum" bindinput="getPhone" maxlength="20" placeholder="输入您的联系方式" placeholder-style="color:#000000" type="number"
+      auto-focus="true" ></input> 
+    </view>
+    <view class="every03">
+      <text class="label">求助问题</text>
+      <textarea class="inputmapf" bindinput="getContent" maxlength="200" placeholder="填写求助问题" placeholder-style="color:#000000" auto-focus="true"></textarea> 
+    </view>
+  </view>
+  <image class="final" bindtap="submit" src="/images/handup.png"></image>
+</view>
+<view class="popup-box" wx:if="{{showIndex=='0'}}" bindtap="closePopup"></view> 
+<view class="info-bottom" wx:if="{{showIndex=='0'}}">
+  <view class="row-info">
+    <view class="mapcontainer">
+      <map id="maps"></map>
+    </view>
+  </view>
+  <view class="row-btn">
+    <view class="left-btn" bindtap="closePopup">取消</view>
+    <view class="right-btn" bindtap="locationreturn">确认</view>
+  </view>
+</view>
