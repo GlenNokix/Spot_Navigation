@@ -1,0 +1,183 @@
+/* pages/help/help.wxss */
+page {
+    background-color: #f2f5f8;
+}
+.whole {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: 34%;
+    background-color: #02b6b7;
+}
+.navigation {
+    color: white;
+    margin-top: 70rpx;
+    margin-left: 40rpx;
+    height: 80rpx;
+    width: 160rpx;
+    z-index: 1;
+}
+.backpic {
+    margin-top: 20rpx;
+    margin-left: -180rpx;
+    width: 100%;
+    height: 560rpx;
+    z-index: 0;
+}
+.content {
+    display: flex;
+    align-items: flex-start;
+    margin-top: -220rpx;
+    z-index: 0;
+}
+.frame {
+    width: 92%;
+    height: 600rpx;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 4%;
+    background-color: white;
+    z-index: 0;
+    border-radius: 12rpx;
+}
+.every01 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40rpx;
+    height: 160rpx;
+    width: 100%;
+    border-bottom: 1rpx solid #f2f5f8;
+}
+.label {
+    color: gray;
+    height: 60rpx;
+    width: 150rpx;
+    margin-left: 5%;
+    margin-top: 4rpx;
+}
+.inputmap {
+    margin-top: 4rpx;
+    color: black;
+    height: 60rpx;
+    width: 380rpx;
+    margin-left: 20rpx;
+}
+.inputnum {
+    margin-top: -4rpx;
+    color: black;
+    height: 60rpx;
+    width: 380rpx;
+    margin-left: 20rpx;
+}
+.mapper {
+    height: 65rpx;
+    width: 65rpx;
+    margin-top: -10rpx;
+    margin-left: 20rpx;
+}
+.every02 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: -100%;
+    margin-top: 240rpx;
+    height: 100rpx;
+    width: 100%;
+    border-bottom: 1rpx solid #f2f5f8;
+}
+.every03 {
+    display: flex;
+    align-items: flex-start;
+    margin-left: -100%;
+    margin-top: 380rpx;
+    height: 80rpx;
+    width: 100%;
+}
+.inputmapf {
+    margin-top: -8rpx;
+    color: black;
+    height: 180rpx;
+    width: 400rpx;
+    margin-left: 20rpx;
+}
+.final {
+    width: 85%;
+    margin-top: 650rpx;
+    margin-left: -89%;
+    height: 80rpx;
+}
+/* 蒙层 */
+.popup-box {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+/* 下 */
+.info-bottom {
+    position: fixed;
+    z-index: 999;
+    height: 60%;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+    border-top-left-radius: 10rpx;
+    border-top-right-radius: 10rpx;
+}
+button {
+    margin: 15rpx 0;
+}
+.row-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15rpx;
+}
+.row-info view {
+    padding: 150rpx 0;
+}
+.row-info view:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1rpx dashed #f1f1f1;
+    margin-top: -110rpx;
+}
+.row-btn view {
+    flex: 1;
+    text-align: center;
+    margin: 20rpx 10%;
+    padding: 12rpx 0;
+    font-size: 32rpx;
+    border-radius: 10rpx;
+}
+.left-btn {
+    background-color: #f1f1f1;
+    color: #33ccff;
+}
+.right-btn {
+    background-color: #33ccff;
+    color: white;
+}
+.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+}
+.mapcontainer {
+    margin-top: -140rpx;
+    height: 550rpx;
+    width: 100%;
+}
+.mapcontainer map {
+    width: 100%;
+    height: 100%;
+}
